@@ -37,5 +37,10 @@
             <mvc:exclude-mapping path="/login"/>
             <bean class="com.sunxu.my.shop.web.admin.web.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
+        <mvc:interceptor>
+            <!--拦截路径-->
+            <mvc:mapping path="/**"/>
+            <bean class="com.sunxu.my.shop.web.admin.web.interceptor.PermissionInterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
 </beans>

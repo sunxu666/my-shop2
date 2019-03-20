@@ -1,7 +1,7 @@
 package com.sunxu.my.shop.web.admin.web.controller;
 
 
-import com.funtl.my.shop.commons.constant.ConstantUtils;
+import com.sunxu.my.shop.commons.constant.ConstantUtils;
 import com.sunxu.my.shop.domain.User;
 import com.sunxu.my.shop.web.admin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +40,8 @@ public class LoginController {
     @RequestMapping(value = "login",method = RequestMethod.POST)
     public String login(@RequestParam(required = true)String email, @RequestParam(required = true)String password, HttpServletRequest httpServletRequest){
         User user = userService.login(email, password);
+        //三元表达式
+//        boolean result = isRemember == null ? false : true;
 
         //登录失败
         if(user==null){

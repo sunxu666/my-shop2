@@ -1,7 +1,7 @@
 package com.sunxu.my.shop.web.admin.web.interceptor;
 
 
-import com.funtl.my.shop.commons.constant.ConstantUtils;
+import com.sunxu.my.shop.commons.constant.ConstantUtils;
 import com.sunxu.my.shop.domain.User;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

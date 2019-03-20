@@ -12,6 +12,7 @@
 </head>
 <body>
 成功
-<a href="http://localhost:8080/druid/index.html">数据执行情况</a>
+<a href="http://localhost:8080/druid/index.html">数据执行情况</a></body><br>
+<a href="/logout">用户注销</a>
 </body>
 </html>
